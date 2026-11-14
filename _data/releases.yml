@@ -1,5 +1,197 @@
 # リリースノートの正本。X の告知（8/21 アップデート予告①〜⑦・公開時の投稿）の事実を、機能ごとに整理し直して書く。
 # 1項目 = 右の枠に出す画面1つ。画像・動画は site.release_media_base/<id>/ に置く。
+- id: "v1-4-5"
+  kind: release
+  version: "1.4.5"
+  date: "2026-11-15"
+  ja:
+    title: "GITADORA の同期の修正・公開されたTier表を探す機能に対応"
+    sections:
+      - heading: "GITADORA"
+        items:
+          - title: "同期で記録が公式とずれる不具合を修正"
+            games: [GITADORA]
+            desc: "同期で、記録が公式サイトとずれることがある不具合を直しました。"
+            list:
+              - "更新後の最初の同期は、記録を公式に揃えるため全曲を読み直します。1回だけ時間がかかります"
+              - "記録の値が下がる書き換えをする時は、書き換える前の記録を端末に残します"
+      - heading: "Tier表"
+        items:
+          - title: "公開されたTier表を探す"
+            desc: "ほかの人が公開したカスタムTier表を、取り込んだ人数のランキングと新着順で探せるようにしました。"
+            list:
+              - "気になる表は中身を見てから取り込めます"
+              - "自分の表は、公開の設定で「公開」を選ぶと一覧に載ります"
+            media: {type: video, src: 261115-v145tier-tier.mp4, poster: 261115-v145tier-tier.jpg}
+      - heading: "目標・成長"
+        items:
+          - title: "成長の目標を難易度で絞る"
+            desc: "成長の目標を、難易度で絞って見られるようにしました。"
+            media: {type: video, src: 261115-v145goal.mp4, poster: 261115-v145goal.jpg}
+      - heading: "設定・同期"
+        items:
+          - title: "別々に使っている2台を後から連携"
+            desc: "別々に使い始めた2台の端末を、後から連携できるようにしました。"
+            media: {type: video, src: 261115-v145link-2.mp4, poster: 261115-v145link-2.jpg}
+          - title: "設定「プレー環境」と同期の画面を作り直し"
+            desc: "設定の「プレー環境」と同期の画面を、機種の一覧から選ぶ形にしました。"
+            media: {type: video, src: 261115-v145settings.mp4, poster: 261115-v145settings.jpg}
+          - title: "要望を送る前に、今ある機能を案内"
+            desc: "要望を送る前に、今ある機能でできることがあれば案内するようにしました。"
+            media: {type: video, src: 261115-v145guide.mp4, poster: 261115-v145guide.jpg}
+      - heading: "そのほかの改善"
+        items:
+          - title: "メダルの変化を成果に表示"
+            games: ["pop'n"]
+            desc: "成果に、同じ色の中でのメダルの変化も出すようにしました。"
+          - title: "クラシックハイスピードをアーケードに合わせる"
+            games: [IIDX]
+            desc: "クラシックハイスピードの値を、アーケードで選べる値に合わせました。"
+          - title: "フレンドの公式IDをライバル追加に貼れる形でコピー"
+            desc: "フレンドの公式IDを、公式サイトのライバル追加の検索欄にそのまま貼れる形でコピーするようにしました。"
+            list:
+              - "そのほか細かな改善と不具合の修正"
+  en:
+    title: "GITADORA sync fix and browsing published Tier Lists"
+    sections:
+      - heading: "GITADORA"
+        items:
+          - title: "Fixed records drifting from the official site in sync"
+            games: [GITADORA]
+            desc: "Fixed an issue where sync could leave records different from the official site."
+            list:
+              - "The first sync after updating re-reads all songs to match the official records. It takes longer only once"
+              - "When a rewrite would lower a record, the record before the rewrite is kept on the device"
+      - heading: "Tier List"
+        items:
+          - title: "Browse published Tier Lists"
+            desc: "You can now browse custom Tier Lists published by others, sorted by how many players imported them or by newest."
+            list:
+              - "You can view a list before importing it"
+              - "To list your own Tier List, choose \"Public\" in its sharing setting"
+            media: {type: video, src: 261115-v145tier-tier.mp4, poster: 261115-v145tier-tier.jpg}
+      - heading: "Goals and growth"
+        items:
+          - title: "Filter growth goals by difficulty"
+            desc: "You can now filter growth goals by difficulty."
+            media: {type: video, src: 261115-v145goal.mp4, poster: 261115-v145goal.jpg}
+      - heading: "Settings and sync"
+        items:
+          - title: "Link two devices you started separately"
+            desc: "Two devices you started using separately can now be linked later."
+            media: {type: video, src: 261115-v145link-2.mp4, poster: 261115-v145link-2.jpg}
+          - title: "Rebuilt the \"Play setup\" and sync screens"
+            desc: "The \"Play setup\" and sync screens in Settings now let you choose from a list of games."
+            media: {type: video, src: 261115-v145settings.mp4, poster: 261115-v145settings.jpg}
+          - title: "Feature tips before sending a request"
+            desc: "Before you send a request, the app now points you to an existing feature that may already do what you want."
+            media: {type: video, src: 261115-v145guide.mp4, poster: 261115-v145guide.jpg}
+      - heading: "Other improvements"
+        items:
+          - title: "Medal changes shown in Results"
+            games: ["pop'n"]
+            desc: "Results now also show medal changes within the same color."
+          - title: "Classic Hi-Speed matches the arcade"
+            games: [IIDX]
+            desc: "Classic Hi-Speed values now match the values you can choose in the arcade."
+          - title: "Copy a friend's official ID ready for rival search"
+            desc: "A friend's official ID is now copied in a form you can paste straight into the rival search on the official site."
+            list:
+              - "Other minor improvements and bug fixes"
+  ko:
+    title: "GITADORA 동기화 수정 및 공개된 Tier 표 찾기 지원"
+    sections:
+      - heading: "GITADORA"
+        items:
+          - title: "동기화 시 기록이 공식과 어긋나는 문제 수정"
+            games: [GITADORA]
+            desc: "동기화 후 기록이 공식 사이트와 달라질 수 있는 문제를 수정했습니다."
+            list:
+              - "업데이트 후 첫 동기화에서는 공식 기록에 맞추기 위해 모든 곡을 다시 읽습니다. 한 번만 시간이 걸립니다"
+              - "기록 값이 낮아지는 수정을 할 때는 수정 전 기록을 기기에 남깁니다"
+      - heading: "Tier 표"
+        items:
+          - title: "공개된 Tier 표 찾기"
+            desc: "다른 사람이 공개한 커스텀 Tier 표를 가져온 인원 순위와 최신순으로 찾을 수 있게 했습니다."
+            list:
+              - "마음에 드는 표는 내용을 본 뒤 가져올 수 있습니다"
+              - "내 표는 공개 설정에서 \"공개\"를 고르면 목록에 올라갑니다"
+            media: {type: video, src: 261115-v145tier-tier.mp4, poster: 261115-v145tier-tier.jpg}
+      - heading: "목표·성장"
+        items:
+          - title: "성장 목표를 난이도로 좁히기"
+            desc: "성장 목표를 난이도로 좁혀서 볼 수 있게 했습니다."
+            media: {type: video, src: 261115-v145goal.mp4, poster: 261115-v145goal.jpg}
+      - heading: "설정·동기화"
+        items:
+          - title: "따로 쓰던 2대를 나중에 연동"
+            desc: "따로 쓰기 시작한 기기 2대를 나중에 연동할 수 있게 했습니다."
+            media: {type: video, src: 261115-v145link-2.mp4, poster: 261115-v145link-2.jpg}
+          - title: "설정 \"플레이 환경\"과 동기화 화면 개편"
+            desc: "설정의 \"플레이 환경\"과 동기화 화면을 기종 목록에서 고르는 방식으로 바꿨습니다."
+            media: {type: video, src: 261115-v145settings.mp4, poster: 261115-v145settings.jpg}
+          - title: "요청을 보내기 전에 기존 기능 안내"
+            desc: "요청을 보내기 전에, 지금 있는 기능으로 할 수 있는 일이 있으면 안내하도록 했습니다."
+            media: {type: video, src: 261115-v145guide.mp4, poster: 261115-v145guide.jpg}
+      - heading: "그 밖의 개선"
+        items:
+          - title: "성과에 메달 변화 표시"
+            games: ["pop'n"]
+            desc: "성과에 같은 색 안에서의 메달 변화도 표시하도록 했습니다."
+          - title: "클래식 하이스피드를 아케이드에 맞춤"
+            games: [IIDX]
+            desc: "클래식 하이스피드 값을 아케이드에서 고를 수 있는 값에 맞췄습니다."
+          - title: "친구의 공식 ID를 라이벌 추가에 붙여넣을 수 있는 형태로 복사"
+            desc: "친구의 공식 ID를 공식 사이트의 라이벌 추가 검색란에 그대로 붙여넣을 수 있는 형태로 복사하도록 했습니다."
+            list:
+              - "그 밖의 자잘한 개선 및 버그 수정"
+  zh:
+    title: "修正 GITADORA 同步・支援搜尋公開的Tier表"
+    sections:
+      - heading: "GITADORA"
+        items:
+          - title: "修正同步後紀錄與官方不符的問題"
+            games: [GITADORA]
+            desc: "修正了同步後紀錄可能與官方網站不一致的問題。"
+            list:
+              - "更新後的第一次同步會重新讀取所有歌曲，以對齊官方紀錄。只有這一次會比較久"
+              - "在改寫會讓紀錄數值變低時，會先將改寫前的紀錄保留在裝置上"
+      - heading: "Tier表"
+        items:
+          - title: "搜尋公開的Tier表"
+            desc: "可以依匯入人數排行與最新順序，搜尋其他人公開的自訂Tier表。"
+            list:
+              - "感興趣的表可以先看內容再匯入"
+              - "自己的表在公開設定中選擇「公開」即會列入清單"
+            media: {type: video, src: 261115-v145tier-tier.mp4, poster: 261115-v145tier-tier.jpg}
+      - heading: "目標・成長"
+        items:
+          - title: "依難度篩選成長目標"
+            desc: "可以依難度篩選成長目標。"
+            media: {type: video, src: 261115-v145goal.mp4, poster: 261115-v145goal.jpg}
+      - heading: "設定・同步"
+        items:
+          - title: "事後連結分開使用的兩台裝置"
+            desc: "分開開始使用的兩台裝置，現在可以事後連結。"
+            media: {type: video, src: 261115-v145link-2.mp4, poster: 261115-v145link-2.jpg}
+          - title: "重新設計設定的「遊玩環境」與同步畫面"
+            desc: "設定的「遊玩環境」與同步畫面，改為從機種清單中選擇。"
+            media: {type: video, src: 261115-v145settings.mp4, poster: 261115-v145settings.jpg}
+          - title: "送出需求前介紹現有功能"
+            desc: "送出需求前，若現有功能就能做到，會先加以介紹。"
+            media: {type: video, src: 261115-v145guide.mp4, poster: 261115-v145guide.jpg}
+      - heading: "其他改善"
+        items:
+          - title: "在成果中顯示獎章變化"
+            games: ["pop'n"]
+            desc: "成果中也會顯示同一顏色內的獎章變化。"
+          - title: "經典 Hi-Speed 對齊街機"
+            games: [IIDX]
+            desc: "經典 Hi-Speed 的數值已對齊街機可選擇的數值。"
+          - title: "以可貼上對手新增的格式複製好友的官方ID"
+            desc: "好友的官方ID會以可直接貼到官方網站對手新增搜尋欄的格式複製。"
+            list:
+              - "其他細部改善與錯誤修正"
 - id: "v1-4-4"
   kind: release
   version: "1.4.4"

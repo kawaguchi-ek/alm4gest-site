@@ -2,6 +2,7 @@
 # 記事ページの見た目を 4言語 × 幅1440px・390px × ダーク・ライトで確かめる。
 #   _tools/release_note/check_layout.sh <id> [撮影先]
 # サイトを一時フォルダへ組んで開き、check_layout.cjs で崩れを数える。終了コード 0 = 崩れなし。
+# playwright は実際にブラウザを起動できるもので選ぶ（フル版の Chromium が無く headless 版だけの時も使える。2026-11-15）。
 # 撮った画像は1枚ずつ開いて目で見る（数えられない崩れ＝文節の切れ方・札の見え方の確認）。
 set -euo pipefail
 ID="${1:?使い方: check_layout.sh <id> [撮影先]}"
@@ -10,7 +11,7 @@ OUT="${2:-${TMPDIR:-/tmp}/release_check/$ID}"
 PORT=4011
 JEKYLL=/opt/homebrew/lib/ruby/gems/4.0.0/bin/jekyll
 DEST="$(mktemp -d)"
-PW_DIR="$(for d in $(find "$HOME/.npm/_npx" -maxdepth 4 -type d -name playwright -path '*node_modules*'); do NODE_PATH="$(dirname "$d")" node -e "process.exit(require('fs').existsSync(require('playwright').chromium.executablePath())?0:1)" 2>/dev/null && { dirname "$d"; break; }; done)"
+PW_DIR="$(for d in $(find "$HOME/.npm/_npx" -maxdepth 4 -type d -name playwright -path '*node_modules*'); do NODE_PATH="$(dirname "$d")" node -e "require('playwright').chromium.launch().then(b=>b.close()).then(()=>process.exit(0),()=>process.exit(1))" 2>/dev/null && { dirname "$d"; break; }; done)"
 [ -n "$PW_DIR" ] || { echo "playwright が見つかりません（~/.npm/_npx）"; exit 1; }
 
 cd "$SITE"

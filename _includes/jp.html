@@ -1,2 +1,5 @@
 {%- comment -%}日本語・中国語は文節の切れ目でだけ折り返す（BudouX。語の途中で行が分かれないように）。韓国語は CSS の keep-all で語の単位になる{%- endcomment -%}
-{%- if page.lang == 'ja' -%}<budoux-ja>{{ include.text }}</budoux-ja>{%- elsif page.lang == 'zh' -%}<budoux-zh-hant>{{ include.text }}</budoux-zh-hant>{%- else -%}{{ include.text }}{%- endif -%}
+{%- comment -%}原稿の **…** は太字にする（2026-11-15 川口さんの原稿で使われた）{%- endcomment -%}
+{%- assign jp_t = include.text -%}
+{%- if jp_t contains '**' -%}{%- assign jp_parts = jp_t | split: '**' -%}{%- capture jp_t -%}{%- for jp_p in jp_parts -%}{%- if forloop.index0 == 1 or forloop.index0 == 3 or forloop.index0 == 5 -%}<strong>{{ jp_p }}</strong>{%- else -%}{{ jp_p }}{%- endif -%}{%- endfor -%}{%- endcapture -%}{%- endif -%}
+{%- if page.lang == 'ja' -%}<budoux-ja>{{ jp_t }}</budoux-ja>{%- elsif page.lang == 'zh' -%}<budoux-zh-hant>{{ jp_t }}</budoux-zh-hant>{%- else -%}{{ jp_t }}{%- endif -%}

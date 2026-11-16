@@ -4,11 +4,42 @@
     "details": [
       {
         "appID": "4HT4PUF4SF.com.alm4gest.app",
-        "appIDs": ["4HT4PUF4SF.com.alm4gest.app"],
-        "paths": ["/f", "/f/*"],
+        "appIDs": [
+          "4HT4PUF4SF.com.alm4gest.app"
+        ],
+        "paths": [
+          "/f",
+          "/f/*",
+          "/t",
+          "/t/*",
+          "/s",
+          "/s/*"
+        ],
         "components": [
-          { "/": "/f", "comment": "フレンド申請のリンク（ALM-259）" },
-          { "/": "/f/*", "comment": "フレンド申請のリンク（ALM-259）" }
+          {
+            "/": "/f",
+            "comment": "フレンド申請のリンク（ALM-259）"
+          },
+          {
+            "/": "/f/*",
+            "comment": "フレンド申請のリンク（ALM-259）"
+          },
+          {
+            "/": "/t",
+            "comment": "Tier表のリンク（ALM-273）"
+          },
+          {
+            "/": "/t/*",
+            "comment": "Tier表のリンク（ALM-273）"
+          },
+          {
+            "/": "/s",
+            "comment": "スコアタのリンク（ALM-273）"
+          },
+          {
+            "/": "/s/*",
+            "comment": "スコアタのリンク（ALM-273）"
+          }
         ]
       }
     ]

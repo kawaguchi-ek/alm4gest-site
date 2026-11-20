@@ -3,7 +3,7 @@
 - id: "v1-4-6"
   kind: release
   version: "1.4.6"
-  date: "2026-11-20"
+  date: "2026-11-21"
   ja:
     title: "Tier表のクラス選択・リンク共有などに対応"
     sections:
@@ -15,7 +15,7 @@
               - "これによって、自分より一つ上の実力の人がどの曲が楽だと感じているかが分かります"
               - "複数のクラスを選び、1つのTier表にまとめることもできます"
               - "なお、統計情報が足りないクラスは選択できません"
-            media: {type: video, src: 261120-v146tier-tier.mp4, poster: 261120-v146tier-tier.jpg}
+            media: {type: video, src: 261121-v146tier-tier.mp4, poster: 261121-v146tier-tier.jpg}
       - heading: "リンク共有"
         items:
           - title: "Tier表・スコアタをリンクで共有"
@@ -23,7 +23,7 @@
             list:
               - "リンクを開くと、アプリの該当画面に移動します（アプリがない場合はストアを開きます）"
               - "スコアタは作成時にリンクが表示され、Tier表は共有コードをコピーするとリンクになります。"
-            media: {type: video, src: 261120-v146link.mp4, poster: 261120-v146link.jpg}
+            media: {type: video, src: 261121-v146link.mp4, poster: 261121-v146link.jpg}
       - heading: "スコアタ"
         items:
           - title: "RANDOMの使用制限"
@@ -33,7 +33,7 @@
               - "これによって、S-RANDOM縛りのスコアタなどが作成出来ます"
               - "「S-RANDOMを使用した」ことが分かる証拠が出せる機種がポップンのみであるため、まずはポップンのみとします。"
               - "他機種は縛った証拠が取れませんが、ニーズに応じて表示のみ出来る実装を検討をしようと考えています。"
-            media: {type: video, src: 261120-v146random-popn-random.mp4, poster: 261120-v146random-popn-random.jpg}
+            media: {type: video, src: 261121-v146random-popn-random.mp4, poster: 261121-v146random-popn-random.jpg}
       - heading: "GITADORA"
         items:
           - title: "SKILLと課題曲選択の改善"
@@ -41,7 +41,7 @@
             list:
               - "ホームのSKILLを、ΔとGW(旧筐体)とで切り替えて表示できるようにしました"
               - "スコアタ・課題の曲選択で、ギターとベースを切り替えられるようにしました"
-            media: {type: video, src: 261120-v146gitadora-gitadora-gw-gt-ba.mp4, poster: 261120-v146gitadora-gitadora-gw-gt-ba.jpg}
+            media: {type: video, src: 261121-v146gitadora-gitadora-gw-gt-ba.mp4, poster: 261121-v146gitadora-gitadora-gw-gt-ba.jpg}
       - heading: "軽微な改善と修正"
         items:
           - title: "機能改善"
@@ -66,7 +66,7 @@
               - "For example, you can see which songs players one band above you find easy"
               - "You can also pick several bands and combine them into one Tier list"
               - "Bands without enough stats can't be selected"
-            media: {type: video, src: 261120-v146tier-tier.mp4, poster: 261120-v146tier-tier.jpg}
+            media: {type: video, src: 261121-v146tier-tier.mp4, poster: 261121-v146tier-tier.jpg}
       - heading: "Link sharing"
         items:
           - title: "Share Tier lists and Score Attacks by link"
@@ -74,7 +74,7 @@
             list:
               - "Opening a link takes you to that screen in the app (or to the store if the app isn't installed)"
               - "Score Attacks show a link when you create them; for Tier lists, copying the share code gives you a link."
-            media: {type: video, src: 261120-v146link.mp4, poster: 261120-v146link.jpg}
+            media: {type: video, src: 261121-v146link.mp4, poster: 261121-v146link.jpg}
       - heading: "Score Attack"
         items:
           - title: "Limit RANDOM options"
@@ -84,7 +84,7 @@
               - "This lets you hold Score Attacks such as S-RANDOM only"
               - "pop'n music is the only game whose results show proof that S-RANDOM was used, so this starts with pop'n music only."
               - "Other games can't prove the restriction, but depending on demand we're considering a display-only version."
-            media: {type: video, src: 261120-v146random-popn-random.mp4, poster: 261120-v146random-popn-random.jpg}
+            media: {type: video, src: 261121-v146random-popn-random.mp4, poster: 261121-v146random-popn-random.jpg}
       - heading: "GITADORA"
         items:
           - title: "SKILL and song selection improvements"
@@ -92,7 +92,7 @@
             list:
               - "The SKILL on Home can now be switched between Δ and GW (previous cabinet)"
               - "When choosing songs for Score Attacks and challenges, you can now switch between guitar and bass"
-            media: {type: video, src: 261120-v146gitadora-gitadora-gw-gt-ba.mp4, poster: 261120-v146gitadora-gitadora-gw-gt-ba.jpg}
+            media: {type: video, src: 261121-v146gitadora-gitadora-gw-gt-ba.mp4, poster: 261121-v146gitadora-gitadora-gw-gt-ba.jpg}
       - heading: "Minor improvements and fixes"
         items:
           - title: "Improvements"
@@ -117,7 +117,7 @@
               - "이로써 나보다 한 단계 위 실력의 사람들이 어떤 곡을 쉽게 느끼는지 알 수 있습니다"
               - "여러 구간을 골라 하나의 Tier 표로 합칠 수도 있습니다"
               - "통계가 부족한 구간은 선택할 수 없습니다"
-            media: {type: video, src: 261120-v146tier-tier.mp4, poster: 261120-v146tier-tier.jpg}
+            media: {type: video, src: 261121-v146tier-tier.mp4, poster: 261121-v146tier-tier.jpg}
       - heading: "링크 공유"
         items:
           - title: "Tier 표·스코어 어택을 링크로 공유"
@@ -125,7 +125,7 @@
             list:
               - "링크를 열면 앱의 해당 화면으로 이동합니다(앱이 없으면 스토어가 열립니다)"
               - "스코어 어택은 만들 때 링크가 표시되고, Tier 표는 공유 코드를 복사하면 링크가 됩니다."
-            media: {type: video, src: 261120-v146link.mp4, poster: 261120-v146link.jpg}
+            media: {type: video, src: 261121-v146link.mp4, poster: 261121-v146link.jpg}
       - heading: "스코어 어택"
         items:
           - title: "RANDOM 사용 제한"
@@ -135,7 +135,7 @@
               - "이로써 S-RANDOM 한정 스코어 어택 등을 만들 수 있습니다"
               - "\"S-RANDOM을 사용했다\"는 증거를 낼 수 있는 기종이 팝픈뮤직뿐이라, 우선 팝픈뮤직에만 적용합니다."
               - "다른 기종은 제한을 지켰다는 증거를 얻을 수 없지만, 수요에 따라 표시만 하는 기능을 검토하려 합니다."
-            media: {type: video, src: 261120-v146random-popn-random.mp4, poster: 261120-v146random-popn-random.jpg}
+            media: {type: video, src: 261121-v146random-popn-random.mp4, poster: 261121-v146random-popn-random.jpg}
       - heading: "GITADORA"
         items:
           - title: "SKILL과 과제곡 선택 개선"
@@ -143,7 +143,7 @@
             list:
               - "홈의 SKILL을 Δ와 GW(구 기체)로 전환해 표시할 수 있게 되었습니다"
               - "스코어 어택·과제의 곡 선택에서 기타와 베이스를 전환할 수 있게 되었습니다"
-            media: {type: video, src: 261120-v146gitadora-gitadora-gw-gt-ba.mp4, poster: 261120-v146gitadora-gitadora-gw-gt-ba.jpg}
+            media: {type: video, src: 261121-v146gitadora-gitadora-gw-gt-ba.mp4, poster: 261121-v146gitadora-gitadora-gw-gt-ba.jpg}
       - heading: "사소한 개선과 수정"
         items:
           - title: "기능 개선"
@@ -168,7 +168,7 @@
               - "這樣就能知道比自己高一個段位的玩家覺得哪些曲子比較簡單"
               - "也可以選擇多個段位，合併成一張Tier表"
               - "統計資料不足的段位無法選擇"
-            media: {type: video, src: 261120-v146tier-tier.mp4, poster: 261120-v146tier-tier.jpg}
+            media: {type: video, src: 261121-v146tier-tier.mp4, poster: 261121-v146tier-tier.jpg}
       - heading: "連結分享"
         items:
           - title: "以連結分享Tier表與分數挑戰"
@@ -176,7 +176,7 @@
             list:
               - "開啟連結會前往App中的對應畫面（未安裝App時會開啟商店）"
               - "分數挑戰在建立時會顯示連結；Tier表複製分享碼即可成為連結。"
-            media: {type: video, src: 261120-v146link.mp4, poster: 261120-v146link.jpg}
+            media: {type: video, src: 261121-v146link.mp4, poster: 261121-v146link.jpg}
       - heading: "分數挑戰"
         items:
           - title: "RANDOM使用限制"
@@ -186,7 +186,7 @@
               - "這樣就能舉辦只限S-RANDOM等的分數挑戰"
               - "目前只有pop'n music能提出「使用了S-RANDOM」的證明，因此先僅限pop'n music。"
               - "其他機種無法取得遵守限制的證明，但我們正考慮依需求做出僅顯示的功能。"
-            media: {type: video, src: 261120-v146random-popn-random.mp4, poster: 261120-v146random-popn-random.jpg}
+            media: {type: video, src: 261121-v146random-popn-random.mp4, poster: 261121-v146random-popn-random.jpg}
       - heading: "GITADORA"
         items:
           - title: "SKILL與課題曲選擇的改善"
@@ -194,7 +194,7 @@
             list:
               - "首頁的SKILL現在可以在Δ與GW（舊機台）之間切換顯示"
               - "在分數挑戰與課題的選曲中，現在可以切換吉他與貝斯"
-            media: {type: video, src: 261120-v146gitadora-gitadora-gw-gt-ba.mp4, poster: 261120-v146gitadora-gitadora-gw-gt-ba.jpg}
+            media: {type: video, src: 261121-v146gitadora-gitadora-gw-gt-ba.mp4, poster: 261121-v146gitadora-gitadora-gw-gt-ba.jpg}
       - heading: "細微改善與修正"
         items:
           - title: "功能改善"

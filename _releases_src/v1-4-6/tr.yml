@@ -1,0 +1,183 @@
+# 英・韓・中の訳。Claude が書く（川口さんは直さない）。
+# src は訳したときの日本語。原稿の日本語が変わった文は build が TODO に戻す。
+# アプリの用語は konami_score_app/lib/l10n/app_*.arb に合わせる。
+src:
+  title: Tier表のクラス選択・リンク共有などに対応
+  sections:
+  - heading: Tier表
+    items:
+    - title: 他のクラスのTier表を表示
+      desc: 自分のクラス（同実力帯）以外のTier表も見られるようにしました！
+      list:
+      - これによって、自分より一つ上の実力の人がどの曲が楽だと感じているかが分かります
+      - 複数のクラスを選び、1つのTier表にまとめることもできます
+      - なお、統計情報が足りないクラスは選択できません
+  - heading: リンク共有
+    items:
+    - title: Tier表・スコアタをリンクで共有
+      desc: Tier表やスコアタをSNSなどで共有できるリンクを作れるようにしました！
+      list:
+      - リンクを開くと、アプリの該当画面に移動します（アプリがない場合はストアを開きます）
+      - スコアタは作成時にリンクが表示され、Tier表は共有コードをコピーするとリンクになります。
+  - heading: スコアタ
+    items:
+    - title: RANDOMの使用制限
+      desc: 主催者が、スコアタで使用できる制限としてRANDOM（OFF・RANDOM・MIRROR・S-RANDOM）を設定できるようにしました！
+      list:
+      - これによって、S-RANDOM縛りのスコアタなどが作成出来ます
+      - 「S-RANDOMを使用した」ことが分かる証拠が出せる機種がポップンのみであるため、まずはポップンのみとします。
+      - 他機種は縛った証拠が取れませんが、ニーズに応じて表示のみ出来る実装を検討をしようと考えています。
+  - heading: GITADORA
+    items:
+    - title: SKILLと課題曲選択の改善
+      list:
+      - ホームのSKILLを、ΔとGW(旧筐体)とで切り替えて表示できるようにしました
+      - スコアタ・課題の曲選択で、ギターとベースを切り替えられるようにしました
+  - heading: 軽微な改善と修正
+    items:
+    - title: 機能改善
+      list:
+      - 楽曲一覧の検索窓に、絞り込み結果の件数を表示するようにしました
+      - '[SDVX] 楽曲一覧の絞り込みに「995万」「998万」を追加しました'
+      - '[IIDX] 緑数字などの設定をSP・DP別に保存するようにしました'
+    - title: 不具合修正
+      list:
+      - 新曲の記録が同期されないことがある不具合を修正しました。取得できなかった記録は次回の同期で取り込みます
+      - '[POPN] 同期で不要な曲まで読み直していた動作を改善しました'
+      - '[DDR] フレアスキルが公式より高く表示される不具合を修正しました'
+      - ログイン時の画像認証・確認コード入力でエラーになる不具合を修正しました
+en:
+  title: Pick other bands in the Tier list, link sharing, and more
+  sections:
+  - heading: Tier List
+    items:
+    - title: View Tier lists of other bands
+      desc: You can now view Tier lists for bands other than your own (players at your skill level)!
+      list:
+      - For example, you can see which songs players one band above you find easy
+      - You can also pick several bands and combine them into one Tier list
+      - Bands without enough stats can't be selected
+  - heading: Link sharing
+    items:
+    - title: Share Tier lists and Score Attacks by link
+      desc: You can now create links to share Tier lists and Score Attacks on social media and elsewhere!
+      list:
+      - Opening a link takes you to that screen in the app (or to the store if the app isn't installed)
+      - Score Attacks show a link when you create them; for Tier lists, copying the share code gives you a link.
+  - heading: Score Attack
+    items:
+    - title: Limit RANDOM options
+      desc: Organizers can now set which RANDOM options (OFF, RANDOM, MIRROR, S-RANDOM) are allowed in a Score Attack!
+      list:
+      - This lets you hold Score Attacks such as S-RANDOM only
+      - pop'n music is the only game whose results show proof that S-RANDOM was used, so this starts with pop'n music only.
+      - Other games can't prove the restriction, but depending on demand we're considering a display-only version.
+  - heading: GITADORA
+    items:
+    - title: SKILL and song selection improvements
+      list:
+      - The SKILL on Home can now be switched between Δ and GW (previous cabinet)
+      - When choosing songs for Score Attacks and challenges, you can now switch between guitar and bass
+  - heading: Minor improvements and fixes
+    items:
+    - title: Improvements
+      list:
+      - The song list search box now shows how many results your filters return
+      - '[SDVX] Added "9.95M" and "9.98M" to the song list filters'
+      - '[IIDX] Settings such as the green number are now saved separately for SP and DP'
+    - title: Bug fixes
+      list:
+      - Fixed new songs' records sometimes not syncing. Records that weren't picked up are imported on the next sync
+      - '[POPN] Sync no longer re-reads songs it doesn''t need to'
+      - '[DDR] Fixed Flare Skill sometimes showing higher than the official value'
+      - Fixed errors in the image verification and confirmation code steps at login
+ko:
+  title: Tier 표 구간 선택·링크 공유 등 대응
+  sections:
+  - heading: Tier 표
+    items:
+    - title: 다른 구간의 Tier 표 보기
+      desc: 내 구간(같은 실력대) 외의 Tier 표도 볼 수 있게 되었습니다!
+      list:
+      - 이로써 나보다 한 단계 위 실력의 사람들이 어떤 곡을 쉽게 느끼는지 알 수 있습니다
+      - 여러 구간을 골라 하나의 Tier 표로 합칠 수도 있습니다
+      - 통계가 부족한 구간은 선택할 수 없습니다
+  - heading: 링크 공유
+    items:
+    - title: Tier 표·스코어 어택을 링크로 공유
+      desc: Tier 표와 스코어 어택을 SNS 등에서 공유할 수 있는 링크를 만들 수 있게 되었습니다!
+      list:
+      - 링크를 열면 앱의 해당 화면으로 이동합니다(앱이 없으면 스토어가 열립니다)
+      - 스코어 어택은 만들 때 링크가 표시되고, Tier 표는 공유 코드를 복사하면 링크가 됩니다.
+  - heading: 스코어 어택
+    items:
+    - title: RANDOM 사용 제한
+      desc: 주최자가 스코어 어택에서 사용할 수 있는 RANDOM(OFF·RANDOM·MIRROR·S-RANDOM)을 설정할 수 있게 되었습니다!
+      list:
+      - 이로써 S-RANDOM 한정 스코어 어택 등을 만들 수 있습니다
+      - '"S-RANDOM을 사용했다"는 증거를 낼 수 있는 기종이 팝픈뮤직뿐이라, 우선 팝픈뮤직에만 적용합니다.'
+      - 다른 기종은 제한을 지켰다는 증거를 얻을 수 없지만, 수요에 따라 표시만 하는 기능을 검토하려 합니다.
+  - heading: GITADORA
+    items:
+    - title: SKILL과 과제곡 선택 개선
+      list:
+      - 홈의 SKILL을 Δ와 GW(구 기체)로 전환해 표시할 수 있게 되었습니다
+      - 스코어 어택·과제의 곡 선택에서 기타와 베이스를 전환할 수 있게 되었습니다
+  - heading: 사소한 개선과 수정
+    items:
+    - title: 기능 개선
+      list:
+      - 곡 목록 검색창에 필터 결과 개수를 표시하게 되었습니다
+      - '[SDVX] 곡 목록 필터에 "995만"·"998만"을 추가했습니다'
+      - '[IIDX] 초록 숫자 등의 설정을 SP·DP별로 저장하게 되었습니다'
+    - title: 버그 수정
+      list:
+      - 신곡 기록이 동기화되지 않는 경우가 있던 버그를 수정했습니다. 가져오지 못한 기록은 다음 동기화에서 가져옵니다
+      - '[POPN] 동기화에서 필요 없는 곡까지 다시 읽던 동작을 개선했습니다'
+      - '[DDR] 플레어 스킬이 공식보다 높게 표시되는 경우가 있던 버그를 수정했습니다'
+      - 로그인 시 이미지 인증·확인 코드 입력에서 오류가 나던 버그를 수정했습니다
+zh:
+  title: Tier表可選擇段位、支援連結分享等
+  sections:
+  - heading: Tier表
+    items:
+    - title: 查看其他段位的Tier表
+      desc: 現在也能查看自己段位（同實力帶）以外的Tier表了！
+      list:
+      - 這樣就能知道比自己高一個段位的玩家覺得哪些曲子比較簡單
+      - 也可以選擇多個段位，合併成一張Tier表
+      - 統計資料不足的段位無法選擇
+  - heading: 連結分享
+    items:
+    - title: 以連結分享Tier表與分數挑戰
+      desc: 現在可以建立連結，在社群網站等處分享Tier表與分數挑戰！
+      list:
+      - 開啟連結會前往App中的對應畫面（未安裝App時會開啟商店）
+      - 分數挑戰在建立時會顯示連結；Tier表複製分享碼即可成為連結。
+  - heading: 分數挑戰
+    items:
+    - title: RANDOM使用限制
+      desc: 主辦者現在可以設定分數挑戰中可使用的 RANDOM（OFF・RANDOM・MIRROR・S-RANDOM）！
+      list:
+      - 這樣就能舉辦只限S-RANDOM等的分數挑戰
+      - 目前只有pop'n music能提出「使用了S-RANDOM」的證明，因此先僅限pop'n music。
+      - 其他機種無法取得遵守限制的證明，但我們正考慮依需求做出僅顯示的功能。
+  - heading: GITADORA
+    items:
+    - title: SKILL與課題曲選擇的改善
+      list:
+      - 首頁的SKILL現在可以在Δ與GW（舊機台）之間切換顯示
+      - 在分數挑戰與課題的選曲中，現在可以切換吉他與貝斯
+  - heading: 細微改善與修正
+    items:
+    - title: 功能改善
+      list:
+      - 樂曲列表的搜尋框會顯示篩選結果的數量
+      - '[SDVX] 樂曲列表的篩選新增「995萬」「998萬」'
+      - '[IIDX] 綠色數字等設定改為SP與DP分別儲存'
+    - title: 錯誤修正
+      list:
+      - 修正新曲紀錄有時無法同步的問題。未取得的紀錄會在下次同步時匯入
+      - '[POPN] 改善同步時會重新讀取不必要曲目的問題'
+      - '[DDR] 修正Flare Skill有時顯示得比官方高的問題'
+      - 修正登入時圖片驗證與確認碼輸入會出錯的問題
